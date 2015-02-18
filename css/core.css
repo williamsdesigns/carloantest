@@ -475,19 +475,29 @@
   margin: 0 auto;
 }
 
+.row {
+  width: 100%;
+  clear: both;
+  display: block;
+}
+
 .col-1-4 {
+  float: left;
   width: 25%;
 }
 
 .col-1-4 {
+  float: left;
   width: 25%;
 }
 
 .col-3-4 {
+  float: left;
   width: 75%;
 }
 
 .col-2-4 {
+  float: left;
   width: 50%;
 }
 
