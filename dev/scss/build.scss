@@ -1,6 +1,6 @@
 @import "core/options", "core/mixins";
 @import "core/sections";
 @import "core/owl-carousel/owl.carousel", "core/owl-carousel/owl.theme", "core/owl-carousel/owl.transitions";
-@import "core/gridle/grid.scss"; //I wont try to re-event the wheel and create my own grid
+@import "core/grid"; //Really basic grid 
 
 @import "custom/buttons";
