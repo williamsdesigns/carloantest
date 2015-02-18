@@ -1,0 +1,12 @@
+/*
+ * === Sections ===
+ */
+
+.section{
+    background-color: white;
+    padding: $gutter*4 0;
+}
+.section--dark{
+    background-color: rgba($color--pop, 0.6);
+    color: white;
+}
