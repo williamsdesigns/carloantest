@@ -10,7 +10,7 @@
 }
 .button:hover{
 	background-color: $color--stand-out;
-	border-bottom: 3px solid darken($color--stand-out, 20%);
+	border-color: darken($color--stand-out, 20%);
 }
 a.button{
 	color: white;
