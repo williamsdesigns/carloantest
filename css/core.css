@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 /*
  * === Options ===
  */
@@ -13,8 +14,25 @@
 }
 
 .section--dark {
-  background-color: rgba(118, 199, 192, 0.6);
+  background-color: #f3f3f3;
   color: white;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:before, .module:before,
+.clearfix:after,
+.module:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after, .module:after {
+  clear: both;
 }
 
 /* 
@@ -504,11 +522,21 @@
 .header {
   width: 100%;
   background-color: #76c7c0;
+  background-image: url(../img/ruler.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
 }
 
 .logo {
   float: left;
   width: 30%;
+}
+.logo h1 {
+  color: white;
+}
+.logo h1 small {
+  font-weight: normal;
+  margin-left: -5px;
 }
 
 .nav {
@@ -535,7 +563,7 @@
   text-decoration: none;
   color: white;
 }
-.nav__item a:hover {
+.nav__item:hover a {
   background-color: #3e9991;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -548,8 +576,16 @@
 .nav__item--has-children ul {
   position: absolute;
 }
+.nav__item--has-children:hover:hover a {
+  background-color: #e8645a;
+  border-bottom: 3px solid #68150e;
+}
 .nav__item--has-children:hover ul {
   display: block;
+}
+
+.module {
+  background-color: #ececee;
 }
 
 /*# sourceMappingURL=core.css.map */

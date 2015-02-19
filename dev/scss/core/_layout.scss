@@ -1,10 +1,20 @@
 .header{
 	width: 100%;
 	background-color: $color--pop;
+	background-image: url(../img/ruler.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
 }
 .logo{
 	float: left;
 	width: 30%;
+	h1{
+		color: white;
+		small{
+			font-weight: normal;
+			margin-left: -$gutter/2;
+		}
+	}
 }
 
 .nav{
@@ -21,7 +31,7 @@
 			text-decoration: none;
 			color: white;
 		}
-		a:hover{
+		&:hover a{
 			background-color: darken($color--pop, 20%);
 			@include border-radius($gutter/2);
 			border-bottom: 3px solid darken($color--pop, 40%);
@@ -41,8 +51,18 @@
 		position: absolute;
 	}
 	&__item--has-children:hover{
+		&:hover a{
+			background-color: $color--stand-out;
+			border-bottom: 3px solid darken($color--stand-out, 40%);
+		}
+
 		ul{
 			display: block;
 		}
 	}
+}
+
+.module{
+	@extend .clearfix;
+	background-color: $color--darker;
 }

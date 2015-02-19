@@ -1,0 +1,14 @@
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
