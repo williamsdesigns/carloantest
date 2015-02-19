@@ -2,8 +2,11 @@
  * === Options ===
  */
 $gutter: 10px;
-$fontSize: 14;
+$fontSize: 13;
+$fontSize-m: $fontSize*1.4;
+$fontSize-l: $fontSize*2;
 $color--dark: #f3f3f3;
+$color--grey: #7f8c8c;
 $color--darker: #ececee;
 $color--pop: #76c7c0;
 $color--stand-out: #e8645a;

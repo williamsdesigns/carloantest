@@ -1,0 +1,26 @@
+.button{
+	background-color: $color--pop;
+	@include border-radius($gutter/2);
+	border-bottom: 4px solid darken($color--pop, 10%);
+	padding: $gutter*1.5 $gutter*5;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	@include font-size($fontSize-m);
+}
+.button:hover{
+	background-color: $color--stand-out;
+	border-bottom: 3px solid darken($color--stand-out, 20%);
+}
+a.button{
+	color: white;
+	text-decoration: none;
+}
+.button--stand-out{
+	background-color: $color--stand-out;
+	border-color:  darken($color--stand-out, 20%);
+}
+.button--stand-out:hover{
+	background-color: darken($color--stand-out, 3%);
+	border-color:  darken($color--stand-out, 20%);
+}

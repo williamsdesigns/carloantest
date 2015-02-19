@@ -1,6 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	@include font-size($fontSize);
+	color: $color--grey;
 }
 
 .clearfix:before,

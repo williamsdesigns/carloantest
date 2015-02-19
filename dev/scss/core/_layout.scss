@@ -10,6 +10,7 @@
 	width: 30%;
 	h1{
 		color: white;
+		@include font-size($fontSize*2.3);
 		small{
 			font-weight: normal;
 			margin-left: -$gutter/2;
@@ -20,7 +21,7 @@
 .nav{
 	float: right;
 	width: 70%;
-	margin-top: $gutter*3.5;
+	margin-top: $gutter*3.3;
 	ul{
 		list-style: none;
 		margin: 0;
@@ -34,7 +35,7 @@
 		&:hover a{
 			background-color: darken($color--pop, 20%);
 			@include border-radius($gutter/2);
-			border-bottom: 3px solid darken($color--pop, 40%);
+			border-bottom: 3px solid darken($color--pop, 30%);
 		}
 		width: 12%;
 		text-align: center;
@@ -53,7 +54,7 @@
 	&__item--has-children:hover{
 		&:hover a{
 			background-color: $color--stand-out;
-			border-bottom: 3px solid darken($color--stand-out, 40%);
+			border-bottom: 3px solid darken($color--stand-out, 20%);
 		}
 
 		ul{
@@ -64,5 +65,71 @@
 
 .module{
 	@extend .clearfix;
+	@include border-radius($gutter/2);
 	background-color: $color--darker;
+	padding: $gutter*3;
+	h3{
+		margin: 0;
+		font-weight: 600;
+		@include font-size($fontSize-l);
+	}
+	p{
+		margin: 0;
+		@include font-size($fontSize);
+
+	}
+}
+
+.feature-list{
+	@extend .clearfix;
+	margin: $gutter*4 0;
+	padding: 0;
+	
+	li{	
+		float: left;
+		width: 23%;
+		margin-right: 2%;
+		list-style: none;
+		text-align: center;
+		.fa{
+			color: $color--pop;
+			font-size: 4.5em;
+		}
+		h4{
+			text-transform: uppercase;
+			@include font-size($fontSize-m);
+		}
+		.button{
+			display: block;
+			position:relative;
+			color: white;
+			top: $gutter*6.5;
+			width: 80%;
+			margin: 0 auto;
+			text-transform: none;
+			@include font-size($fontSize);
+		}
+	}
+	a {
+		@include border-radius($gutter/2);
+		padding: $gutter*4 $gutter*2;
+		text-decoration: none;
+		color: $color--grey;
+		display: block;
+		background-color: darken(white, 2%);
+		border-bottom: 4px solid $color--darker;
+	}
+	a:hover{
+		background-color: white;
+		.fa{
+			color: $color--stand-out;
+		}
+		.button{
+			background-color: $color--stand-out;
+			border-color: darken($color--stand-out, 20%);
+		}
+	}
+	&:last-child{
+		margin-right: 0;
+	}
 }
