@@ -9,6 +9,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	@include font-size($fontSize);
 	color: $color--grey;
+	background-color: $color--dark;
 }
 
 .clearfix:before,
@@ -19,4 +20,13 @@ body{
 
 .clearfix:after {
     clear: both;
+}
+
+blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	line-height: 1.6em;
 }

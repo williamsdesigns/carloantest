@@ -12,19 +12,23 @@
 
 .col-1-4{
 	float: left;
-	width: 25%; 
+	width: 25%;
+	// padding: $gutter;
 }
 .col-1-4{
 	float: left;
-	width: 25%; 
+	width: 25%;
+	// padding: $gutter;
 }
 .col-3-4{
 	float: left;
 	width: 75%; 
+	// padding: $gutter;
 }
 .col-2-4{
 	float: left;
 	width: 50%; 
+	padding: $gutter;
 }
 
 .pull-right{

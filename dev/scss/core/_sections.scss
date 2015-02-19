@@ -5,7 +5,41 @@
 .section{
     background-color: white;
     padding: $gutter*4 0;
+    position: relative;
 }
 .section--dark{
     background-color: $color--dark;
+}
+
+.section--darker{
+    background-color: $color--darker;
+}
+.section--stand-out{
+	background-image: url(../img/ruler-dark.png);
+	background-position: top;
+	background-repeat: repeat-x;
+	text-align: center;
+	padding-bottom: $gutter*23;
+	h2{
+		color: $color--stand-out;
+		text-transform: uppercase;
+		@include font-size($fontSize*3);
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	p{
+		margin-top: 0;
+	}
+	.screens{
+		img{
+			width: 100%;
+		}
+		margin-top: $gutter*5;
+		position: absolute;
+	}
+}
+
+.container.section--post-standout{
+	@extend .clearfix;
+	margin: $gutter*22 auto $gutter*8 auto;
 }
