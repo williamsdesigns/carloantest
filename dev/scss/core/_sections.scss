@@ -20,6 +20,9 @@
 	background-repeat: repeat-x;
 	text-align: center;
 	padding-bottom: $gutter*23;
+	@include breakpoint(medium) { 
+		padding-bottom: $gutter*14;
+	}
 	h2{
 		color: $color--stand-out;
 		text-transform: uppercase;
@@ -31,15 +34,22 @@
 		margin-top: 0;
 	}
 	.screens{
+		
 		img{
 			width: 100%;
+			margin: 0 auto;
 		}
+		width: 96%;
 		margin-top: $gutter*5;
 		position: absolute;
+
 	}
 }
 
 .container.section--post-standout{
 	@extend .clearfix;
 	margin: $gutter*22 auto $gutter*8 auto;
+	@include breakpoint(medium) { 
+		margin-top: $gutter*14;
+	}
 }

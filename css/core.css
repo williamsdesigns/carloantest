@@ -30,6 +30,11 @@
   text-align: center;
   padding-bottom: 230px;
 }
+@media (max-width: 900px) {
+  .section--stand-out {
+    padding-bottom: 140px;
+  }
+}
 .section--stand-out h2 {
   color: #e8645a;
   text-transform: uppercase;
@@ -42,15 +47,22 @@
   margin-top: 0;
 }
 .section--stand-out .screens {
+  width: 96%;
   margin-top: 50px;
   position: absolute;
 }
 .section--stand-out .screens img {
   width: 100%;
+  margin: 0 auto;
 }
 
 .container.section--post-standout {
   margin: 220px auto 80px auto;
+}
+@media (max-width: 900px) {
+  .container.section--post-standout {
+    margin-top: 140px;
+  }
 }
 
 html {
@@ -550,6 +562,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .row {
@@ -579,6 +592,27 @@ p {
   padding: 10px;
 }
 
+@media (max-width: 900px) {
+  .col-4-4--medium {
+    width: 100%;
+  }
+
+  .col-1-4--medium {
+    width: 25%;
+  }
+
+  .col-1-4--medium {
+    width: 25%;
+  }
+
+  .col-3-4--medium {
+    width: 75%;
+  }
+
+  .col-2-4--medium {
+    width: 50%;
+  }
+}
 .pull-right {
   float: right;
 }
@@ -672,6 +706,11 @@ p {
   font-size: 13px;
   font-size: 0.8125rem;
 }
+@media (max-width: 900px) {
+  .module .button {
+    padding: 20px;
+  }
+}
 
 .feature-list {
   margin: 40px 0;
@@ -683,6 +722,15 @@ p {
   margin-right: 2%;
   list-style: none;
   text-align: center;
+}
+@media (max-width: 900px) {
+  .feature-list li {
+    width: 49%;
+    margin-bottom: 60px;
+  }
+  .feature-list li:nth-child(2) {
+    margin-right: 0;
+  }
 }
 .feature-list li .fa {
   color: #76c7c0;
@@ -740,10 +788,31 @@ p {
   margin-top: 50px;
   font-size: 16px;
 }
+@media (max-width: 1200px) {
+  .measure {
+    font-size: 14px;
+  }
+}
+@media (max-width: 960px) {
+  .measure {
+    font-size: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .measure {
+    font-size: 14px;
+  }
+}
 .measure li {
   float: left;
   width: 25%;
   position: relative;
+}
+@media (max-width: 700px) {
+  .measure li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 .measure .measure__graph-wrapper {
   overflow: hidden;
