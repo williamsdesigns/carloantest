@@ -14,22 +14,18 @@
 .col-1-4{
 	float: left;
 	width: 25%;
-	// padding: $gutter;
 }
 .col-1-4{
 	float: left;
 	width: 25%;
-	// padding: $gutter;
 }
 .col-3-4{
 	float: left;
 	width: 75%; 
-	// padding: $gutter;
 }
 .col-2-4{
 	float: left;
 	width: 50%; 
-	padding: $gutter;
 }
 
 @include breakpoint(medium) { 
@@ -46,6 +42,25 @@
 		width: 75%; 
 	}
 	.col-2-4--medium{
+		width: 50%; 
+	}
+
+}
+
+@include breakpoint(small) { 
+	.col-4-4--small{
+		width: 100%;
+	}
+	.col-1-4--small{
+		width: 25%;
+	}
+	.col-1-4--small{
+		width: 25%;
+	}
+	.col-3-4--small{
+		width: 75%; 
+	}
+	.col-2-4--small{
 		width: 50%; 
 	}
 

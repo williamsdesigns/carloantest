@@ -23,6 +23,9 @@
 	@include breakpoint(medium) { 
 		padding-bottom: $gutter*14;
 	}
+	@include breakpoint(small) { 
+		padding-bottom: $gutter*4;
+	}
 	h2{
 		color: $color--stand-out;
 		text-transform: uppercase;
@@ -43,13 +46,19 @@
 		margin-top: $gutter*5;
 		position: absolute;
 
+		@include breakpoint(small) { 
+			margin-top: $gutter*1;
+			width: 100%;
+			position: static;
+		}
 	}
 }
 
 .container.section--post-standout{
 	@extend .clearfix;
 	margin: $gutter*22 auto $gutter*8 auto;
-	@include breakpoint(medium) { 
-		margin-top: $gutter*14;
+	@include breakpoint(small) { 
+		margin-top: $gutter*2;
+
 	}
 }
