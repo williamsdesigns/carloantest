@@ -10,6 +10,7 @@ body{
 	@include font-size($fontSize);
 	color: $color--grey;
 	background-color: $color--dark;
+	overflow-x: hidden; 
 }
 
 .clearfix:before,
@@ -29,4 +30,8 @@ blockquote{
 
 p{
 	line-height: 1.6em;
+}
+
+main{
+	@include transition(opacity 0.3s ease);
 }

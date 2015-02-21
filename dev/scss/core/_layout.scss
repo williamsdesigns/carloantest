@@ -52,24 +52,61 @@
 			display: none;
 		}
 	}
+	&__item--has-children{
+		position: relative;
+		border-bottom: 35px solid transparent;
+		a{
+			padding-left: $gutter*2;
+
+		}
+	}
+	&__item--has-children:before{
+		position: absolute;
+		height: $gutter;
+		width: $gutter;
+		left: 8px;
+		color: white;
+		top: 2px;
+		font: normal normal normal 10px/1 FontAwesome;
+		content: "\f078";
+	}
 	&__item--has-children ul{
 		position: absolute;
+		width: 220px;
+		margin-top: 20px;
+
+		&:after {
+			bottom: 100%;
+			left: 10%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: darken($color--stand-out, 5%);
+			border-width: 5px;
+			margin-left: -5px;
+		}
 	}
+
 	&__item--has-children:hover{
 		&:hover a{
 			background-color: $color--stand-out;
 			border-bottom: 3px solid darken($color--stand-out, 5%);
 			margin-bottom: $gutter/2;
 		}
+		&:hover ul a{
+			border-bottom: none;
+		}
 
 		ul{
 			@include border-radius($gutter/2);
 			z-index: 100;
 			background-color: darken($color--stand-out, 5%);
-			margin: 0 0 0 $gutter/2;
-			padding: $gutter/2;
+			padding: $gutter/2 $gutter/2 0 $gutter/2;
 			display: block;
-			border-top: $gutter*2 solid transparent;
 			
 			a{
 				padding: $gutter;
@@ -77,6 +114,84 @@
 				background-color: $color--stand-out;
 			}
 		}
+	}
+}
+
+.mobile-menu{
+	float: right;
+	display: none;
+	margin-top: $gutter*2;
+	padding: $gutter $gutter*1.5;
+	background-color: white;
+	@include border-radius($gutter/2);
+	cursor: pointer;
+}
+
+@include breakpoint(medium) {
+	.logo{
+		width: 80%;
+	}
+	.mobile-menu{
+		display: block;
+	}
+	.nav-is-open{
+		.nav{
+			right: 0;
+		}
+		main{
+			opacity: 0.1;
+		}
+	}
+	.nav{
+		background-color: darken($color--pop, 20%);
+		position: absolute;
+		margin-top: 0;
+		right: 100%;
+		width: 100%;
+		z-index: 100;
+		top: 82px;
+		@include transition(right 0.3s ease);
+
+		ul{
+			margin: 0;
+			padding: 0;			
+		}
+
+		&__item--has-children:hover{
+			&:hover a{
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+		}
+		
+		&__item--has-children:before,
+		&__item--has-children:hover ul{
+			display: none; //Unable to do child click to reveal due to time constraints
+		}
+
+		&__item{
+			float: none;
+			width: 100%;
+			border-bottom: 1px solid darken($color--pop, 25%);
+
+
+
+			a{
+				padding: $gutter*2;
+				text-decoration: none;
+				color: white;
+				width: 100%;
+				display: block;
+			}
+
+			&:hover a{
+				background-color: $color--pop;
+				border: none;
+				border-radius: 0;
+			}
+
+		}
+
 	}
 }
 
