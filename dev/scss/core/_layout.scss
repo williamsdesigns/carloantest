@@ -100,7 +100,9 @@
 		&:hover ul a{
 			border-bottom: none;
 		}
-
+		&:hover ul a:hover{
+			background-color: $color--pop;
+		}
 		ul{
 			@include border-radius($gutter/2);
 			z-index: 100;
@@ -173,8 +175,6 @@
 			float: none;
 			width: 100%;
 			border-bottom: 1px solid darken($color--pop, 25%);
-
-
 
 			a{
 				padding: $gutter*2;
@@ -526,8 +526,8 @@
 
 }
 .owl-wrapper-outer{
-		background-color: $color--grey;
-		padding: $gutter*17 0;
+	background-color: $color--grey;
+	padding: $gutter*17 0;
 }
 .button.slider__buttom--prev,
 .button.slider__buttom--next{
@@ -537,30 +537,28 @@
 	padding: $gutter $gutter*1.2;
 	@include font-size($fontSize*3);
 	color: white;
-
 }
 .button.slider__buttom--prev{
-
--webkit-border-radius: 5px;
--webkit-border-top-left-radius: 0px;
--webkit-border-bottom-left-radius: 0px;
--moz-border-radius: 5px;
--moz-border-radius-topleft: 0px;
--moz-border-radius-bottomleft: 0px;
-border-radius: 5px;
-border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius: 5px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 .button.slider__buttom--next{
 	right:0;
 	left: auto;
--webkit-border-radius: 0px;
--webkit-border-top-left-radius: 5px;
--webkit-border-bottom-left-radius: 5px;
--moz-border-radius: 0px;
--moz-border-radius-topleft: 5px;
--moz-border-radius-bottomleft: 5px;
-border-radius: 0px;
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
+	-webkit-border-radius: 0px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius: 0px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }

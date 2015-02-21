@@ -7,10 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/core.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -189,29 +186,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/owl.carousel.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-            var slider = $("#slider");
-            $("#slider").owlCarousel({
-                 navigation : false,
-                  slideSpeed : 300,
-                  paginationSpeed : 400,
-                  singleItem:true
-            });
-            $(".next").click(function(){
-                slider.trigger('owl.next');
-            });
-            $(".prev").click(function(){
-                slider.trigger('owl.prev');
-            });
-            $('.mobile-menu').click(function(){
-                $('body').toggleClass('nav-is-open');
-            });
-            $('.nav__item--has-children').mouseover(function(){
-                $(this).toggleClass('is-active');
-            })
-        });
-        </script>
+        <script src="js/main.js"></script>
+        
     </body>
 
 </html>
