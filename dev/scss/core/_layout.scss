@@ -534,9 +534,24 @@
 	position: absolute;
 	left: 0;
 	top: 250px;
+	cursor: pointer;
 	padding: $gutter $gutter*1.2;
 	@include font-size($fontSize*3);
 	color: white;
+}
+@include breakpoint(small) { 
+	.button.slider__buttom--prev,
+	.button.slider__buttom--next{
+		padding: 0 $gutter;
+		@include font-size($fontSize*2);
+		top: 130px;
+
+
+	}
+	.owl-wrapper-outer{
+		padding: $gutter*4 0;
+	}
+
 }
 .button.slider__buttom--prev{
 	-webkit-border-radius: 5px;
